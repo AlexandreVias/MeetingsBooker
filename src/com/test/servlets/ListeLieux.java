@@ -11,31 +11,31 @@ import javax.servlet.http.HttpServletRequest;
 
 import javax.servlet.http.HttpServletResponse;
 
-
+import com.test.beans.Lieu;
 import com.test.beans.Utilisateur;
 
 import com.test.dao.DAOFactory;
-
+import com.test.dao.LieuDao;
 import com.test.dao.UtilisateurDao;
 
 
-public class ListeInscrits extends HttpServlet {
+public class ListeLieux extends HttpServlet {
 
     public static final String CONF_DAO_FACTORY = "daofactory";
 
-    public static final String ATT_LISTUSER         = "listeinscrits";
+    public static final String ATT_LISTLieux         = "listelieux";
 
-    public static final String VUE              = "/listeinscrits.jsp";
+    public static final String VUE              = "/listelieux.jsp";
 
 
-    private UtilisateurDao     utilisateurDao;
+    private LieuDao     lieuDao;
 
 
     public void init() throws ServletException {
 
-        /* Récupération d'une instance de notre DAO Utilisateur */
+        /* Récupération d'une instance de notre DAO Lieu */
 
-        this.utilisateurDao = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getUtilisateurDao();
+        this.lieuDao = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getLieuDao();
 
     }
 
@@ -43,8 +43,8 @@ public class ListeInscrits extends HttpServlet {
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
 
        
-    	ArrayList<Utilisateur> listeutilisateurs = utilisateurDao.trouverTous();
-    	request.setAttribute( ATT_LISTUSER, listeutilisateurs );
+    	ArrayList<Lieu> listelieux = lieuDao.trouverTous();
+    	request.setAttribute( ATT_LISTLieux, listelieux );
 
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
 
