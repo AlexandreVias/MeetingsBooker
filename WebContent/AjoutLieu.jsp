@@ -12,7 +12,6 @@
 	</head>
 	
 	<body>
-	test
 		<form method="post" action="ajoutlieu">
 		
 			<fieldset>
@@ -95,8 +94,8 @@
 				<label for="coordonnees">Coordonnées lieu <span
 				class"requis">*</span></label>
 				
-				<input type="text" id=""coordonnees"" name=""coordonnees"" value="<c:out
-				value="${lieu."coordonnees"}"/> " size="3" maxlength="60"/>
+				<input type="text" id="coordonnees" name="coordonnees" value="<c:out
+				value="${lieu.coordonnees}"/> " size="3" maxlength="60"/>
 				
 				<span class="erreur">${form.erreurs['"coordonnees"']}</span>
 				

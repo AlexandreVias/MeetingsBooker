@@ -65,8 +65,8 @@ public class Lieu {
 	public boolean isAnnulationgratuite() {
 		return annulationgratuite;
 	}
-	public void setAnnulationgratuite(boolean annulationgratuite) {
-		this.annulationgratuite = annulationgratuite;
+	public void setAnnulationgratuite(boolean annulationgratuite2) {
+		this.annulationgratuite = annulationgratuite2;
 	}
 	public int getNote() {
 		return note;
