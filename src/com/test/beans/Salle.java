@@ -78,6 +78,5 @@ public class Salle {
 	public void setPhoto(String pPhoto) {
 		photo = pPhoto;
 	}
-	
 
 }

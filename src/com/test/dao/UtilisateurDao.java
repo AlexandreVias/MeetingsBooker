@@ -8,7 +8,7 @@ public interface UtilisateurDao {
 
     void creer( Utilisateur utilisateur ) throws DAOException;
 
-    Utilisateur trouver( String email ) throws DAOException;
+    Utilisateur trouver( String login ) throws DAOException;
     
     ArrayList<Utilisateur> trouverTous() throws DAOException;
 

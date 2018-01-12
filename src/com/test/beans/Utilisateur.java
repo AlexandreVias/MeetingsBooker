@@ -5,12 +5,11 @@ package com.test.beans;
 public class Utilisateur {
 
 	private String login;
-	private String mdp;
+	private String motDePasse;
 	
-	public Utilisateur(String plogin, String pmotdepasse) {
-		
-		this.login=plogin;
-		this.mdp=pmotdepasse;
+	public Utilisateur(String pLogin, String pMotDePasse) {
+		this.login=pLogin;
+		this.motDePasse=pMotDePasse;
 	}
 	
 	public String getLogin() {
@@ -19,11 +18,11 @@ public class Utilisateur {
 	public void setLogin(String login) {
 		this.login = login;
 	}
-	public String getMdp() {
-		return mdp;
+	public String getMotDePasse() {
+		return motDePasse;
 	}
-	public void setMdp(String mdp) {
-		this.mdp = mdp;
+	public void setMotDePasse(String motDePasse) {
+		this.motDePasse = motDePasse;
 	}
 	
 }

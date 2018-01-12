@@ -54,6 +54,14 @@
 	<servlet-name>listestations</servlet-name>
 	<url-pattern>/listestations</url-pattern>
 </servlet-mapping>
+<servlet>
+	<servlet-name>rechercheLieu</servlet-name>
+	<servlet-class>com.test.servlets.RechercheLieu</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>rechercheLieu</servlet-name>
+	<url-pattern>/rechercheLieu</url-pattern>
+</servlet-mapping>
 
 <listener>
     <listener-class>com.test.config.InitialisationDaoFactory</listener-class>
