@@ -17,29 +17,14 @@
 	<servlet-name>inscription</servlet-name>
 	<url-pattern>/inscription</url-pattern>
 </servlet-mapping>
+
 <servlet>
-	<servlet-name>listeinscrits</servlet-name>
-	<servlet-class>com.test.servlets.ListeInscrits</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>listeinscrits</servlet-name>
-	<url-pattern>/listeinscrits</url-pattern>
-</servlet-mapping>
-<servlet>
-	<servlet-name>listestations</servlet-name>
-	<servlet-class>com.test.servlets.ListeStations</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>listestations</servlet-name>
-	<url-pattern>/listestations</url-pattern>
-</servlet-mapping>
-<servlet>
-	<servlet-name>ajoutStation</servlet-name>
+	<servlet-name>ajoutstation</servlet-name>
 	<servlet-class>com.test.servlets.AjoutStation</servlet-class>
 </servlet>
 <servlet-mapping>
-	<servlet-name>ajoutStation</servlet-name>
-	<url-pattern>/ajoutStation</url-pattern>
+	<servlet-name>ajoutstation</servlet-name>
+	<url-pattern>/ajoutstation</url-pattern>
 </servlet-mapping>
 
 <servlet>
@@ -50,6 +35,24 @@
 <servlet-mapping>
 	<servlet-name>GestionTestJDBC</servlet-name>
 	<url-pattern>/testjdbc</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>listeinscrits</servlet-name>
+	<servlet-class>com.test.servlets.ListeInscrits</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>listeinscrits</servlet-name>
+	<url-pattern>/listeinscrits</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>listestations</servlet-name>
+	<servlet-class>com.test.servlets.ListeStations</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>listestations</servlet-name>
+	<url-pattern>/listestations</url-pattern>
 </servlet-mapping>
 
 <listener>

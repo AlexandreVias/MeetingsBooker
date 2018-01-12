@@ -139,9 +139,13 @@ public class DAOFactory {
         return new UtilisateurDaoImpl( this );
 
     }
+    
+    public LieuDao getLieuDao() {
 
+        return new lieuDaoImpl( this );
 
-	public StationDao getStationDao() {
-		return new StationDaoImpl( this );
-	}
+    }
+    
 }
+
+
