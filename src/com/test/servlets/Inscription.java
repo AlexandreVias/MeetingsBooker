@@ -23,9 +23,7 @@ import com.test.forms.InscriptionForm;
 
 public class Inscription extends HttpServlet {
 
-
-
-	public static final String CONF_DAO_FACTORY = "daofactory";
+    public static final String CONF_DAO_FACTORY = "daofactory";
 
     public static final String ATT_USER         = "utilisateur";
 
